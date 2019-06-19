@@ -429,15 +429,15 @@ def main():
         user_stats(df, city)
 
         # Exits 
-        restart = input('\n \n DONE! Shall we go again? [Y]es/[N]o: ')
-        if restart.lower() in ["y", "yes", "sure", "why not", "ya", "restart"]:
+        go_again = input('\n \n DONE! Shall we go again? [Y]es/[N]o: ')
+        if go_again.lower() in ["y", "yes", "sure", "why not", "ya", "go_again"]:
             continue
-        elif restart.lower() in ["no", "n", "stop", "quit", "exit"]:
+        elif go_again.lower() in ["no", "n", "stop", "quit", "exit"]:
             print ("\n See ya!")
             break
         else:
             print("\n Not sure what you meant by '{}'... Assuming you wanted"
-                " to quit!".format(restart))
+                " to quit!".format(go_again))
             break
 
 if __name__ == '__main__':
