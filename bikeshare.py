@@ -372,22 +372,22 @@ def user_filters():
             "   4.  [A]nalyize\n"
             "   5.  [E]xit / [Q]uit \n")  
 
-        user_input = input("Input selection as Word, # or [L]etter: ")
+        menu_input = input("Input selection as Word, # or [L]etter: ")
 
         # Checks input against a list of acceptable inputs for each option
-        if user_input.lower() in ["1", "c", "city", "cities"]:
+        if menu_input.lower() in ["1", "c", "city", "cities"]:
             city = city_filter()
 
         # Month
-        elif user_input.lower() in ["2", "m", "month"]:
+        elif menu_input.lower() in ["2", "m", "month"]:
             month = month_filter()
 
         # Day
-        elif user_input.lower() in ["3", "d", "day"]:
+        elif menu_input.lower() in ["3", "d", "day"]:
             day = day_filter()
 
         # Analyze
-        elif user_input.lower() in ["4", "a", "analyize"]:
+        elif menu_input.lower() in ["4", "a", "analyize"]:
             # Don't progress if no city data set
             if city == 'NONE!':
                 print("\n *** NO CITY DATA SELECTED! SELECT CITY BEFORE ANALYZING! ***")
@@ -396,7 +396,7 @@ def user_filters():
                 break
 
         # Exit program
-        elif user_input.lower() in ["5", "e", "x", "q", "exit", "quit"]:
+        elif menu_input.lower() in ["5", "e", "x", "q", "exit", "quit"]:
             print(" Exiting...")
             exit()
 
