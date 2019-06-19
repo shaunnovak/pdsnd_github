@@ -11,14 +11,21 @@ This interactive script explores the data related to bike share systems for thre
 
 ### Built With
 
-* Python 3.7.3
-* lib - numpy
-* lib - pandas
-* lib - time
-* lib - os
+* [Python 3.7.3][python]
+* [NumPy][numpy] (lib)
+* [pandas][pandas] (lib) 
+* [time][time] (lib)
+* [os][os] (lib)
 
-#### Batteries not included!
-Data files 
+[python]: https://www.python.org/
+[numpy]: https://www.numpy.org/
+[pandas]: https://pandas.pydata.org/
+[time]: https://docs.python.org/3/library/time.html 
+[os]: https://docs.python.org/3/library/os.html
+
+#### Batteries not included
+
+The data files the project uses are not included. See the [Data Files](#data-files) section under [Installation](#installation).
 
 ## Getting Started
 
