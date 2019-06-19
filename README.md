@@ -43,9 +43,17 @@ The data files the project uses are not included. See the [Data Files](#data-fil
 
 ## Contributing
 
+I would love if you had any suggestions and improvements for this code and would enjoy the chance to work with pull requests to further my education.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## Acknowledgements
 
-Sites used for reference while coding the bikeshare file, as well as the markdown for this readme.
+These are some of the amazing places I found help while creating this project. Some were minor configuration fixes, while others were references for framing a way of thinking. All were helpful!
 
 * [Google Python Style Guide][google-sg] - docstring format
 * [PEP 8][pep8] - code layout
