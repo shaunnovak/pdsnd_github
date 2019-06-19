@@ -1,5 +1,5 @@
 # MODULE INFO
-""" Udacity nd104 Projec 2: Explore US Bikeshare Data
+""" Udacity nd104 Project 2: Explore US Bikeshare Data
 
 Uses Python to understand U.S. bikeshare data. Calculate statistics and
 builds an interactive environment where a user chooses the data and filter
@@ -130,7 +130,7 @@ def time_stats(df):
     # Finds most common start hour of trips, formated through time lib
     common_hour = df['Start Time'].mode().dt.hour[0]
     
-    # Formats hour to 12 hour ouput, adds AM / PM
+    # Formats hour to 12 hour output, adds AM / PM
     if common_hour < 12:
         converted_hour = "{}am".format(common_hour)
     else:
@@ -184,7 +184,7 @@ def trip_stats(df):
     avg_trip = df['Trip Duration'].mean() / 60
     print(" Average Trip Duration:  {:,.2f} minutes.".format(avg_trip))
     
-    # Converts sum of all trop duration to minues (from seconds)
+    # Converts sum of all trop duration to minutes (from seconds)
     total_trip = df['Trip Duration'].sum() / 60
     print(" Total of all trips:  {:,.2f} minutes.".format(total_trip))
 
@@ -369,7 +369,7 @@ def user_filters():
             "   1.  [C]ity\n"
             "   2.  [M]onth\n"
             "   3.  [D]ay of the week\n"
-            "   4.  [A]nalyize\n"
+            "   4.  [A]nalyze\n"
             "   5.  [E]xit / [Q]uit \n")  
 
         user_input = input("Input selection as Word, # or [L]etter: ")
@@ -387,7 +387,7 @@ def user_filters():
             day = day_filter()
 
         # Analyze
-        elif user_input.lower() in ["4", "a", "analyize"]:
+        elif user_input.lower() in ["4", "a", "analyze"]:
             # Don't progress if no city data set
             if city == 'NONE!':
                 print("\n *** NO CITY DATA SELECTED! SELECT CITY BEFORE ANALYZING! ***")

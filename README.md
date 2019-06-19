@@ -31,9 +31,9 @@ Sites used for reference while coding the bikeshare file, as well as the markdow
 * [PEP 8][pep8] - code layout
 * [Stack Overflow][stackoverflow] - all the little things
 * [Microsoft VSCode][vscode] - VS Code config for Python
-* [Github - xhlow][github01] - Previous Udacity bikeshare submission. No coppied code
+* [Github - xhlow][github01] - Previous Udacity bikeshare submission. No copied code
 * [VS Code config - Corey Schafer][yt_coreys] - Why doesn't this work in VS CODE??? Oh, click that 1 little thing....
-* [Python 'in' useage - W3 Schools][w3schools] - 'in' useage for input logic
+* [Python 'in' usage - W3 Schools][w3schools] - 'in' usage for input logic
 * [Markdown Style Guide][msg] - Markdown link formatting
 
 [google-sg]: http://google.github.io/styleguide/pyguide.html
