@@ -13,7 +13,7 @@ This interactive script explores the data related to bike share systems for thre
 
 * [Python 3.7.3][python]
 * [NumPy][numpy] (lib)
-* [pandas][pandas] (lib) 
+* [pandas][pandas] (lib)
 * [time][time] (lib)
 * [os][os] (lib)
 
@@ -25,21 +25,9 @@ This interactive script explores the data related to bike share systems for thre
 
 #### Batteries not included
 
-The data files the project uses are not included. See the [Data Files](#data-files) section under [Installation](#installation).
+The data files the project uses are not included in this repo, however you may find them [HERE][data_files]. Thank you to [XHLow][github01] for hosting the files, and providing a great project to reference.
 
-## Getting Started
-
-### Perquisites
-
-### Installation
-
-#### Python Setup
-
-#### Libraries Setup
-
-#### Data Files
-
-#### Code Modifications
+[data_files]: https://drive.google.com/open?id=16FfhNDfAh0DvTIRw9r0plmWZlHPEcBa4
 
 ## Contributing
 
@@ -59,7 +47,7 @@ These are some of the amazing places I found help while creating this project. S
 * [PEP 8][pep8] - code layout
 * [Stack Overflow][stackoverflow] - all the little things
 * [Microsoft VSCode][vscode] - VS Code config for Python
-* [Github - xhlow][github01] - Previous Udacity bikeshare submission. No copied code
+* [Github - xhlow][github01] - Previous Udacity bikeshare submission & data hosting. No copied code
 * [VS Code config - Corey Schafer][yt_coreys] - Why doesn't this work in VS CODE??? Oh, click that 1 little thing....
 * [Python 'in' usage - W3 Schools][w3schools] - 'in' usage for input logic
 * [Markdown Style Guide][msg] - Markdown link formatting
