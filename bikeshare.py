@@ -372,22 +372,23 @@ def user_filters():
             "   4.  [A]nalyze\n"
             "   5.  [E]xit / [Q]uit \n")  
 
-        user_input = input("Input selection as Word, # or [L]etter: ")
+        menu_input = input("Input selection as Word, # or [L]etter: ")
 
         # Checks input against a list of acceptable inputs for each option
-        if user_input.lower() in ["1", "c", "city", "cities"]:
+        if menu_input.lower() in ["1", "c", "city", "cities"]:
             city = city_filter()
 
         # Month
-        elif user_input.lower() in ["2", "m", "month"]:
+        elif menu_input.lower() in ["2", "m", "month"]:
             month = month_filter()
 
         # Day
-        elif user_input.lower() in ["3", "d", "day"]:
+        elif menu_input.lower() in ["3", "d", "day"]:
             day = day_filter()
 
         # Analyze
-        elif user_input.lower() in ["4", "a", "analyze"]:
+        elif menu_input.lower() in ["4", "a", "analyze"]:
+
             # Don't progress if no city data set
             if city == 'NONE!':
                 print("\n *** NO CITY DATA SELECTED! SELECT CITY BEFORE ANALYZING! ***")
@@ -396,7 +397,7 @@ def user_filters():
                 break
 
         # Exit program
-        elif user_input.lower() in ["5", "e", "x", "q", "exit", "quit"]:
+        elif menu_input.lower() in ["5", "e", "x", "q", "exit", "quit"]:
             print(" Exiting...")
             exit()
 
@@ -429,15 +430,15 @@ def main():
         user_stats(df, city)
 
         # Exits 
-        restart = input('\n \n DONE! Shall we go again? [Y]es/[N]o: ')
-        if restart.lower() in ["y", "yes", "sure", "why not", "ya", "restart"]:
+        go_again = input('\n \n DONE! Shall we go again? [Y]es/[N]o: ')
+        if go_again.lower() in ["y", "yes", "sure", "why not", "ya", "go_again"]:
             continue
-        elif restart.lower() in ["no", "n", "stop", "quit", "exit"]:
+        elif go_again.lower() in ["no", "n", "stop", "quit", "exit"]:
             print ("\n See ya!")
             break
         else:
             print("\n Not sure what you meant by '{}'... Assuming you wanted"
-                " to quit!".format(restart))
+                " to quit!".format(go_again))
             break
 
 if __name__ == '__main__':
